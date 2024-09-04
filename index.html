@@ -53,6 +53,13 @@
             <button>Fale Conosco</button> 
         </form>
     </div>
-    <script src="index.js"></script>
+    <script src="index.js">
+                function redirecionar() {
+            setTimeout(function() {
+                window.location.href = "https://lp-desafio-dnc.netlify.app/";
+            }, 5000); // 5000 milissegundos = 5 segundos
+            return true; // Permite que o formulário seja enviado
+        }
+    </script>
 </body>
 </html>
