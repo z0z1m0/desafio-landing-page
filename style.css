@@ -7,15 +7,17 @@
 #cabecalho{
     background-color: #303030;
     color: white;
-    
+    Height:475px;
 }
 #titulo_head{
-    padding: 150px 0px 10px 50px;
+    padding: 206px 0px 0px 62px;
     font-size: 60px;
+    Width:1024px;
+    Height: 72px;
 }
 #texto_head{
     font-weight: 500;
-    padding: 0px 0px 150px 50px;
+    margin: 20px 0px 150px 62px;
 }
 #menu_informacional{
     background-color: #F9F9F9;
@@ -24,11 +26,19 @@
     padding: 50px 0px 50px 150px;
     color: #000;
 }
-#head_informacional{
-  
+#informacional_850{
+    margin-left: 35px;
+    font-size: 40px;
+}
+#informacional_40{
+    margin-left: 35px;
+    font-size: 40px;
+}#informacional_2kk{
+    margin-left: 35px;
+    font-size: 40px;
 }
 #texto_informacional{
-
+    margin-left: 35px;
 }
 #corpo{
     padding: 50px 50px 100px 50px;
@@ -38,14 +48,17 @@
     align-items: center;
 }
 #head_corpo{
-
+    font-size: 40px; 
 }
 #texto_corpo{
     text-align: justify;
+    font-size: 24px;
+    line-height: 30px;
 }
 #loft{
     width: 510px;
     height: 605px;
+    margin: 72px -50px 0px 0px;
 }
 #formulario{
     text-align: center;
