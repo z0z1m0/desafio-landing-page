@@ -56,7 +56,7 @@
     </div>
     
     <script>
-        document.getElementById('meuFormulario').addEventListener('submit', function(event) {
+        document.getElementById('meuFormulario').addEventListener('submit', function() {
             var now = new Date();
             var day = String(now.getDate()).padStart(2, '0');
             var month = String(now.getMonth() + 1).padStart(2, '0'); // Janeiro é 0!
@@ -67,20 +67,6 @@
             
             var formattedDateTime = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
             document.getElementById('dataHora').value = formattedDateTime;
-            
-            // Aguarde o envio do formulário antes de redirecionar
-            event.preventDefault(); // Impede o envio imediato para poder redirecionar após
-            fetch(event.target.action, {
-                method: event.target.method,
-                body: new FormData(event.target)
-            }).then(function() {
-                // Redireciona após 5 segundos
-                setTimeout(function() {
-                    window.location.href = "https://lp-desafio-dnc.netlify.app/";
-                }, 5000); // 5000 milissegundos = 5 segundos
-            }).catch(function(error) {
-                console.error('Erro ao enviar o formulário:', error);
-            });
         });
     </script>
 </body>
