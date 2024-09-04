@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Empresa de Arquitetura</title>
+    <title>Projeto-Arquitetura</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
@@ -22,13 +22,13 @@
     <!--MENU INFORMACIONAL-->
     <div id="menu_informacional">
         <div>
-            <h1 id="head_informacional">850</h1><span id="texto_informacional">empreendimentos construídos</span>
+            <h1 id="informacional_850">850</h1><span id="texto_informacional">empreendimentos construídos</span>
         </div>
         <div>
-            <h1 id="head_informacional">40</h1><span id="texto_informacional">anos de mercado e experiência </span>           
+            <h1 id="informacional_40">40</h1><span id="texto_informacional">anos de mercado e experiência </span>           
         </div>
         <div>
-            <h1 id="head_informacional">2,000,000</h1><span id="texto_informacional">m² em projetos construídos</span>
+            <h1 id="informacional_2kk">2,000,000</h1><span id="texto_informacional">m² em projetos construídos</span>
         </div>
         <p></p>
     </div>
@@ -47,14 +47,13 @@
     <div id="formulario">
         <h1 id="head_form">Conheça mais sobre nossos serviços:</h1>
         <form id="meuFormulario" action="https://script.google.com/macros/s/AKfycby1TKRVNx6yDyfjzXWGUQAb63fH07CqYaleTyUsRg15Dtcd7SB1qzu8jT5dux8GDj4W4Q/exec"
-            method="post">
+            method="post" onsubmit="return redirecionar();">
             <input type="text" id="nome" placeholder="Nome" required name="Nome"><br>
             <input type="email" id="email" placeholder="E-mail" required name="Email"><br>
             <input type="hidden" id="dataHora" name="DataHora"><!-- Campo oculto para data e hora -->
             <button type="submit">Fale Conosco</button> 
         </form>
     </div>
-    
     <script>
         document.getElementById('meuFormulario').addEventListener('submit', function() {
             var now = new Date();
